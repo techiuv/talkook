@@ -12,7 +12,7 @@ Talkook is a real-time chat application that enables users to connect and chat s
 
 - **Frontend:** Tailwind CSS
 - **Backend:** Node.js, Express, Socket.io
-- **Other Tools:** Nodemon for development, React for front-end interactivity, and Tailwind CSS for styling.
+- **Other Tool(s):** Nodemon for development.
 
 ## Getting Started
 
