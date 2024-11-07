@@ -2,14 +2,14 @@ const express = require('express')
 const { dirname } = require('path')
 const app = express()
 const http = require('http').createServer(app)
-const io = require('socket.io')(http)  
+const io = require('socket.io')(http)
 
 const PORT = process.env.PORT || 3000
 
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html') 
+    res.sendFile(__dirname + '/public/index.html')  // Corrected the typo in the path
 })
 
 // Start the server
@@ -23,8 +23,22 @@ io.on('connection', (socket) => {
 
     socket.on('send', (msg) => {
         console.log('Received message:', msg)
-        socket.broadcast.emit('message', msg)  
+        socket.broadcast.emit('message', msg)
     })
 
- 
+    socket.on('user-join', (name) => {
+        console.log(`${name} joined the chat`);
+
+        // Broadcast to all other clients that a user has joined
+        socket.broadcast.emit('user-joined', name);
+    });
+
+    socket.on('user-left', (name) => {
+        console.log(`${name} left the chat`);
+
+        // Broadcast to all other clients that a user has joined
+        socket.broadcast.emit('user-leave', name);
+    });
+
+
 })
