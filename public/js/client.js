@@ -48,20 +48,26 @@ chatForm.addEventListener('submit', (e) => {
     if (input.value.trim() !== '') {
 
         sendMsg(input.value.trim())
-        msgContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
-
+        
     }
 })
+
+function scrollToBottom() {
+    const msgContainer = document.querySelector('.msg-container');
+    msgContainer.scrollTop = msgContainer.scrollHeight;  // Scroll to the bottom
+}
 
 const sendMsg = (message) => {
     let msg = {
         user: name,
         message: message
     }
-
+    
     socket.emit('send', msg)  // Send the message to the server
     appendMsg(msg, 'outgoing-msg')  // Append the outgoing message to the DOM
     input.value = ''
+    // msgContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    scrollToBottom()
 }
 
 const appendMsg = (msg, type) => {
