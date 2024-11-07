@@ -7,14 +7,19 @@
     <meta name="description" content="a real time chat-application using tailwind css">
 
     <title>talkook</title>
+    <style>
+        .pr-\[3px\] {
+            padding-right: 3px;
+        }
+    </style>
 
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
 <body class="bg-bgcolor-50">
     <div class="msg-container  h-[90vh] no-scrollbar p-5 md:p-3 w-100 overflow-y-scroll overscroll-auto">
-
-        <!-- <div class="msg outgoing-msg  float-left clear-both">
+        <!-- <div class="notification">user joined</div> -->
+        <!-- <div class="msg outgoing-msg pr-[3px]  float-left clear-both">
             <span class="absolute -top-5 right-0 text-lg md:text-sm text-slate-200 sender font-light">user</span>
             <span class="font-normal  messgae-content  text-lg md:text-sm  text-white ">message</span>
         </div>
@@ -26,16 +31,12 @@
 
     <div class="mx-auto w-100 h-[10vh] m-0 p-0 py-2 bg-transparent flex justify-center align-center">
         <form action="/" id="chat-form"
-            class="w-[80%] bg-secondarycolor-10 p-0 gap-2 flex justify-center align-middle rounded-3xl ">
+            class="w-[80%] bg-secondarycolor-50 p-0 gap-2 flex justify-center align-middle rounded-3xl ">
             <input type="text" name="msg" autocomplete="off" id="input-msg" placeholder="Type Message..."
                 class=" w-[90%]  border-none outline-none bg-transparent text-white placeholder:text-slate-300 active:bg-transparent font-normal text-lg p-1 resize-y cursor-pointer">
             <button type="submit"
-                class="cursor-pointer rounded-full flex justify-center items-center bg-maincolor-50 active:opacity-90 p-2 m-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#fff" class="bi bi-send"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
-                </svg>
+                class="cursor-pointer rounded-full flex justify-center items-center bg-transparent text-lg font-normal  text-maincolor-50 active:opacity-90 p-2 m-2">
+                send
             </button>
         </form>
     </div>
