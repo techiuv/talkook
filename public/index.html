@@ -7,9 +7,35 @@
     <meta name="description" content="a real time chat-application using tailwind css">
 
     <title>talkook</title>
+    <link rel="shortcut icon" href="pubic/assets/favicon/favicon.ico" type="image/x-icon">
+
     <style>
         .pr-\[3px\] {
-            padding-right: 3px;
+            padding-left: 5px;
+        }
+
+        .outgoing-msg span:first-child {
+            display: none;
+        }
+
+        .outgoing-msg {
+            margin: 5px .5rem;
+        }
+
+        .incoming-msg span:first-child {
+            left: 0;
+
+        }
+
+        .msg-container::-webkit-scrollbar {
+            display: none;
+            /* Hides the scrollbar */
+        }
+
+        /* For Firefox */
+        .msg-container {
+            scrollbar-width: none;
+            /* Hide scrollbar */
         }
     </style>
 
