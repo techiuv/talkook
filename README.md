@@ -7,6 +7,9 @@ Talkook is a real-time chat application that enables users to connect and chat s
 - **Real-Time Messaging:** Send messages instantly to friends and stay connected in real-time.
 - **Reactions to Messages:** Double-click on messages to like them and show your reactions.
 - **Responsive Design:** Built with Tailwind CSS for a modern, responsive UI.
+- ### Get notified who joined the chat
+<img src="public/assets/img/Screenshot (20).png">
+
 
 ## Tech Stack
 <p><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a></p>
@@ -44,5 +47,3 @@ npm run dev
 - Enter your name and get started.
 - Start chatting with friends by sending messages and reacting to their messages.
 
-## Get notified who joined the chat
-<img src="public/assets/img/Screenshot (20).png">
