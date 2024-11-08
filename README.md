@@ -5,7 +5,7 @@ Talkook is a real-time chat application that enables users to connect and chat s
 ## Features
 
 ### Real-Time Messaging 
-<img src="public/assets/img/Screenshot (21).png">
+<img src="public/assets/img/Screenshot (22).png">
 
 ### Get notified who joined the chat
 <img src="public/assets/img/Screenshot (20).png">
