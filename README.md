@@ -4,11 +4,14 @@ Talkook is a real-time chat application that enables users to connect and chat s
 
 ## Features
 
-- **Real-Time Messaging:** Send messages instantly to friends and stay connected in real-time.
-- **Reactions to Messages:** Double-click on messages to like them and show your reactions.
-- **Responsive Design:** Built with Tailwind CSS for a modern, responsive UI.
+### Real-Time Messaging 
+<img src="public/assets/img/Screenshot (21).png">
+
 ### Get notified who joined the chat
 <img src="public/assets/img/Screenshot (20).png">
+
+- **Reactions to Messages:** Double-click on messages to like them and show your reactions.
+- **Responsive Design:** Built with Tailwind CSS for a modern, responsive UI.
 
 
 ## Tech Stack
