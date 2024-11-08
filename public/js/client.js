@@ -12,7 +12,7 @@ const msgContainer = document.querySelector('.msg-container');
 const input = document.getElementById('input-msg');
 
 // Function to create a notification when a user joins
-const noticyUserJoin = (userName) => {
+const notifyUserJoin = (userName) => {
     const notificationDiv = document.createElement('div');
     notificationDiv.classList.add('notification');
     notificationDiv.innerHTML = `${userName} joined the chat`;
@@ -22,20 +22,20 @@ const noticyUserJoin = (userName) => {
 // Listen for 'user-joined' event from the server, triggered when another user joins
 socket.on('user-joined', (userName) => {
     console.log(`${userName} joined the chat`);
-    noticyUserJoin(userName);  // Call the notification function with the user's name
+    notifyUserJoin(userName);  // Call the notification function with the user's name
 });
 
-const noticyUserLeft = (userName) => {
+const notifyUserLeft = (userName) => {
     const notificationDiv = document.createElement('div');
     notificationDiv.classList.add('notification');
     notificationDiv.innerHTML = `${userName} left the chat`;
     msgContainer.appendChild(notificationDiv);  // Add to the DOM
 };
 
-// Listen for 'user-joined' event from the server, triggered when another user joins
+// Listen for 'user-left' event from the server, triggered when another user joins
 socket.on('user-leave', (userName) => {
     console.log(`${userName} left the chat`);
-    noticyUserJoin(userName);  // Call the notification function with the user's name
+    notifyUserJoin(userName);  
 });
 
 document.body.addEventListener('DOMContentLoaded', () => {
