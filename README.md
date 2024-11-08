@@ -10,8 +10,8 @@ Talkook is a real-time chat application that enables users to connect and chat s
 ### Get notified who joined the chat
 <img src="public/assets/img/Screenshot (20).png">
 
-- **Reactions to Messages:** Double-click on messages to like them and show your reactions.
-- **Responsive Design:** Built with Tailwind CSS for a modern, responsive UI.
+### Responsive Design Built with Tailwind CSS 
+<img src="public/assets/img/Screenshot (23).png">
 
 
 ## Tech Stack
