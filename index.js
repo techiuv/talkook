@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/public/index.html')  // Corrected the typo in the path
+    res.sendFile(__dirname + '/public/index.html')  
 })
 
 // Start the server
@@ -36,7 +36,7 @@ io.on('connection', (socket) => {
     socket.on('user-left', (name) => {
         console.log(`${name} left the chat`);
 
-        // Broadcast to all other clients that a user has joined
+        // Broadcast to all other clients that a user has left
         socket.broadcast.emit('user-leave', name);
     });
 
