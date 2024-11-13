@@ -38,7 +38,7 @@ cd talkook
 
 2.**Install Dependencies**
 ```bash
-npm install socket.io express nodemon
+npm install
 ```
 3. **Start the Application**
 ```bash
@@ -47,6 +47,6 @@ npm run dev
 
 ## Usage
 - Open your browser and navigate to `http://localhost:3000`.
-- Enter your name and get started.
+- Enter your `name` and get started.
 - Start chatting with friends by sending messages and reacting to their messages.
 
